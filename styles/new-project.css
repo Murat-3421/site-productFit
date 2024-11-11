@@ -1,0 +1,207 @@
+/* PROJECTS SECTION SLIDE*/
+.projects-section-slide{
+    max-width: 780px;
+    margin: 0 auto;
+}
+.projects-container{
+    position: relative;
+    height: 487px;
+}
+.projects-container > div{
+    position: absolute;
+    width: 90%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s ease-in-out;
+}
+.projects-container > div.active-slide{
+    opacity: 1;
+}
+.projects-container img{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+.nav-dots-project{
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    border: none;
+    transition: background-color 1s ease-in-out, box-shadow 0.5s ease-in-out;
+    background-color: var(--bg-page-2);
+    border-radius: 50%;
+}
+.nav-dots-project:hover{
+    box-shadow: var(--box-shadow-4b);
+}
+.nav-dots-project.active-nav-dot{
+    background-color: var(--theme-color);
+}
+
+/* OPEN GIFT SECTION */
+.open-gift-section{
+    margin: 143px auto 0;
+    max-width: 1196px;
+}
+.open-gift-left{
+    width: 362px;
+    padding: 0 58px;
+    border-radius: 30px;
+}
+.open-gift-left div:nth-child(1){
+    margin-top: -100px;
+}
+.open-gift-left div:nth-child(1) img{
+    width: 100%;
+}
+.open-gift-left div:nth-child(1n){
+    padding-bottom: 20px;
+}
+
+.border{
+    border: 1px solid var(--theme-color);
+    margin: 0 37px;
+    height: 78px;
+}
+.open-gift-left div:nth-child(3){
+    width: 203px;
+}
+.open-gift-left p span {
+    display: block;
+}
+.open-gift-left span, .open-gift-left span{
+    font-size: 24px;
+    color: var(--theme-color);
+}
+.group123{
+    text-align: center;
+}
+.group123 span {
+    padding-left: 20px;
+}
+.open-gift-left .basic-btn {
+    width: 100%;
+    text-align: center;
+}
+.open-gift-right{
+    max-width: 608px;
+    padding-left: 20px;
+}
+/* BANNER SECTION */
+.banner-bg{
+    background-color: var(--theme-color);
+    width: 100%;
+}
+.banner{
+    position: relative;
+    margin: 120px auto;
+    max-width: 1470px;
+    min-height: 441px;
+    
+}
+.banner img{
+    position: absolute;
+    top: -114px;
+    right: 0px;
+}
+.banner-text{
+    padding-left: 150px;
+}
+.banner-text h1, .banner-text p{
+    color: var(--bg-page);
+}
+.banner-text p, .banner-btn a {
+    font-size: 16px;
+}
+.banner-text p {
+    padding: 30px 0;
+}
+.banner-btn, .banner-text {
+    max-width: max-content;
+}
+.banner-btn a{
+    background-color: var(--bg-page);
+    color: var(--theme-color);
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    padding: 26px 23px;
+}
+
+/* APICATION SECTION */
+.aplication-new-project{
+    max-width: 1073px;
+    margin: 0 auto;
+}
+.aplication-new-project  div:nth-child(1){
+    width: 470px;
+}
+.aplication-new-project  div:nth-child(2){
+    max-width: 470px;
+}
+.aplication-new-project p {
+    padding: 30px 0;
+}
+.aplication-new-project img {
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    .banner.flexbox{
+        flex-direction: column;
+    }
+    .banner img{
+        position: initial;
+        width: 100%;
+    }
+    .banner-text{
+        padding: 0 20px 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .open-gift-section.flexbox{
+        flex-direction: column;
+    }
+    .open-gift-right{
+        padding: 20px 0;
+    }
+    .aplication-new-project.flexbox{
+        flex-direction: column;
+    }
+    .aplication-new-project  div:nth-child(1){
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .projects-container{
+        height: 310px;
+        padding: 20px 0;
+    }
+    .projects-container > div, .projects-container img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .open-gift-left{
+        width: 70%;
+    }
+    .open-gift-left span{
+        font-size: 14px;
+    }
+    .border{
+        height: 50px;
+        margin: 0 20px;
+    }
+    .aplication-new-project  div:nth-child(1){
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 300px) {
+    .nav-dots-project{
+        width: 10px;
+        height: 10px;
+    }
+}
